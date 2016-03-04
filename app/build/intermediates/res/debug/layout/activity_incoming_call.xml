@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    >
+
+    <!-- View for when a call comes -->
+
+    <!-- Relative Layout to display caller name and call status -->
+
+    <RelativeLayout
+
+        android:id="@+id/ic_rl_textviews"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:background="@color/green"
+
+        >
+
+        <!-- TextView for caller name -->
+
+        <TextView
+
+            android:id="@+id/ic_tv_caller_name"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Caller Name"
+
+            android:layout_alignParentLeft="true"
+
+            android:textColor="@color/white"
+
+            android:padding="12dp"
+
+            android:textSize="@dimen/text_size_large"
+
+            android:textStyle="bold"
+            />
+
+        <!-- TextView for call status -->
+
+        <!-- which status? -->
+
+<!--        <TextView
+
+            android:id="@+id/ic_tv_call_status"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="CALL STATUS"
+
+            android:textStyle="bold|italic"
+
+            android:layout_alignParentRight="true"
+
+            android:paddingTop="24dp"
+
+            android:paddingRight="12dp"
+
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/text_size_medium"
+
+            /> -->
+
+    </RelativeLayout>
+
+    <!-- ImageView for caller picture -->
+
+    <ImageView
+
+        android:id="@+id/ic_iv_caller_picture"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/blank_profile"
+
+        android:layout_below="@id/ic_rl_textviews"
+
+        />
+
+    <!-- Linear Layout to display accept and reject buttons -->
+    
+    <LinearLayout
+
+        android:id="@+id/ic_ll_accept_reject_buttons"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/ic_iv_caller_picture"
+
+        android:orientation="horizontal"
+
+        >
+
+        <!-- Button for accepting a call -->
+
+        <Button
+
+            android:id="@+id/ic_b_accept"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:text="@string/ic_accept"
+
+            android:layout_weight="1"
+
+            android:background="@color/green"
+
+            android:layout_margin="@dimen/margin_small"
+
+            android:textSize="@dimen/text_size_extra_extra_extra_large"
+
+            />
+
+        <!-- Button for rejecting a call -->
+
+        <Button
+
+            android:id="@+id/ic_b_reject"
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:text="@string/ic_reject"
+
+            android:layout_weight="1"
+
+            android:background="@color/red"
+
+            android:layout_margin="@dimen/margin_small"
+
+            android:textSize="@dimen/text_size_extra_extra_extra_large"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/activity_incoming_call.xml -->

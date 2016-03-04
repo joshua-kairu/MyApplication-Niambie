@@ -1,0 +1,67 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="20dp"
+
+    android:paddingRight="20dp"
+
+    tools:context="com.hoskawa.myapplication_niambie.ReceiveCallActivity"
+
+    >
+
+    <!-- View for when the user decides to wait for a call -->
+
+    <!-- TextView to tell the user we are waiting for a call -->
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/rc_tv_waiting_for_call"
+
+        android:text="@string/rc_waiting_for_call"
+
+        android:textStyle="bold"
+
+        android:textSize="@dimen/text_size_large"
+
+        android:layout_centerInParent="true"
+
+        android:gravity="center_horizontal"
+
+        android:layout_marginTop="5dp"
+
+        android:textColor="@color/green"
+
+        />
+
+    <!-- Progress -->
+
+    <ProgressBar
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/rc_pb"
+
+        android:layout_above="@id/rc_tv_waiting_for_call"
+
+        android:indeterminateDrawable="@drawable/progress_bar"
+
+        android:minHeight="@dimen/progress_bar_height"
+
+        android:maxWidth="@dimen/progress_bar_width"
+
+        />
+
+</RelativeLayout>

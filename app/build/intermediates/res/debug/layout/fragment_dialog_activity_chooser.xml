@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    >
+
+    <!-- A layout for a simple dialog to choose which activity - Server or Client - to start -->
+
+    <!-- Text View to hold the text to inform the user of the dialog -->
+
+    <TextView
+
+        android:id="@+id/fdac_tv_client_choice"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        />
+
+    <!-- Table Layout to hold the buttons -->
+
+    <TableLayout
+
+        android:id="@+id/fdac_tl_yes_no_buttons"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:gravity="fill_horizontal"
+
+        >
+
+        <TableRow
+
+            android:id="@+id/fdac_tr1"
+
+            >
+
+            <!-- Button for positive -->
+
+            <Button
+
+                android:id="@+id/fdac_b_positive"
+
+                android:layout_width="0dp"
+
+                android:layout_height="fill_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                />
+
+            <!-- Button for negative -->
+
+            <Button
+
+                android:id="@+id/fdac_b_negative"
+
+                android:layout_width="0dp"
+
+                android:layout_height="fill_parent"
+
+                android:layout_weight="1"
+
+                android:gravity="center"
+
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/fragment_dialog_activity_chooser.xml -->

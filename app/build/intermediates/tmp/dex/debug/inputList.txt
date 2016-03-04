@@ -1,0 +1,6 @@
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/classes/debug
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-15ffb3ae85f3434f2eb371cfed5e4df15e215154.jar
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/pre-dexed/debug/packages-2f449d25a14e97abaeb150c1fd250dfb418824ee.jar
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-992e311566b4e43ee4e3d0e58ad45aecbefbff57.jar
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/pre-dexed/debug/classes-58b23b21e2d8122687c34a8e27d08637a970d3f1.jar
+/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/build/intermediates/pre-dexed/debug/classes-05fc869747113d1ea49e2fa1708f98e3fdf6291f.jar

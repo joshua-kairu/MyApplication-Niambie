@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+
+    android:padding="6dp"
+
+    >
+
+    <!-- contact name -->
+
+    <TextView
+
+        android:id="@+id/individual_contact_name"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:textSize="16sp"
+
+        android:text="Contact Name"
+
+        android:layout_marginTop="5dp"
+
+        />
+
+    <!-- contact range status -->
+
+    <TextView
+
+        android:id="@+id/individual_contact_range_status"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:textSize="12sp"
+
+        android:text="Range Status"
+
+        android:layout_marginBottom="5dp"
+
+        />
+
+
+</LinearLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/individual_contact_name_and_range.xml -->

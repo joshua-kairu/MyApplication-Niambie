@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="20dp"
+
+    android:paddingRight="20dp"
+
+    >
+
+    <!-- Home view -->
+
+    <!-- TextView for asking the user what they want to do -->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/h_tv_what"
+
+        android:text="@string/h_hello_what"
+
+        android:textSize="@dimen/text_size_large"
+
+        android:textStyle="bold"
+
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+
+        android:layout_centerInParent="true"
+
+
+        />
+
+    <!-- ImageView for showing what the user wants to do -->
+
+    <!-- scale type controls how the image should be resized or moved to match the size of this ImageView -->
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/h_iv_what"
+
+        android:src="@drawable/what"
+
+        android:scaleType="center"
+
+        android:gravity="center"
+
+        android:layout_margin="-50dp"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_above="@id/h_tv_what"
+
+        />
+
+    <!-- LinearLayout to hold the buttons where the user will decide what to do -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/h_tv_what"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_centerHorizontal="true"
+
+        android:gravity="fill_vertical"
+
+        >
+
+        <!-- Button for making a call -->
+
+        <Button
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:id="@+id/h_b_make_call"
+
+            android:text="@string/h_make_call"
+
+            android:textStyle="bold"
+
+            android:textSize="@dimen/text_size_small"
+
+            android:textColor="@color/blue"
+
+            android:padding="5dp"
+
+            android:background="@color/white"
+
+            android:layout_marginRight="10dp"
+
+            />
+
+        <!-- Button for receiving a call -->
+
+        <Button
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:id="@+id/h_b_receive_call"
+
+            android:text="@string/h_receive_call"
+
+            android:textStyle="bold"
+
+            android:textSize="@dimen/text_size_small"
+
+            android:textColor="@color/green"
+
+            android:padding="5dp"
+
+            android:background="@color/white"
+
+            android:layout_marginLeft="5dp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/activity_home.xml -->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:padding="20dp"
+
+    android:orientation="vertical"
+
+    android:layout_gravity="center"
+
+    >
+
+    <!-- Make Call view when there are no contacts to display -->
+
+    <!-- ImageView for showing an empty status -->
+
+    <!-- scale type controls how the image should be resized or moved to match the size of this ImageView -->
+
+    <ImageView
+
+        android:id="@+id/mclwc_iv_no_contacts"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+
+        android:src="@drawable/ic_account_circle_black_for_empty"
+
+        android:scaleType="center"
+
+        android:layout_weight="1"
+
+        />
+
+    <!-- TextView for when there is no contacts to display -->
+
+    <TextView
+
+        android:id="@+id/mclwc_tv_no_contacts"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+
+        android:text="@string/mclwc_no_contacts"
+
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+
+        android:gravity="center"
+
+       android:layout_marginTop="8dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="1"
+
+        />
+
+</LinearLayout>

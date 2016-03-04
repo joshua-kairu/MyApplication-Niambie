@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    >
+
+    <!-- View for when a call is picked -->
+
+    <!-- Relative Layout to display caller name and current call time -->
+
+    <RelativeLayout
+
+        android:id="@+id/cisc_rl_caller_name_and_call_time"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:background="#ff00ff00"
+
+        android:padding="12dp"
+
+        >
+
+        <!-- TextView for caller name -->
+
+        <TextView
+
+            android:id="@+id/cisc_tv_caller_name"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffffff"
+
+            android:textSize="15sp"
+
+            android:text="Caller Name"
+
+            android:layout_alignParentLeft="true"
+
+            />
+
+        <!-- TextView for call time -->
+
+        <TextView
+
+            android:id="@+id/cisc_tv_call_time"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffffff"
+
+            android:textSize="15sp"
+
+            android:text="CALL:T1M3"
+
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+    <!-- ImageView for caller picture -->
+
+    <ImageView
+
+        android:id="@+id/cisc_iv_caller_picture"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:contentDescription=""
+
+        android:background="#ddeeff"
+
+        android:layout_below="@id/cisc_rl_caller_name_and_call_time"
+
+        />
+
+    <!-- Linear Layout to display speaker, mute, and end call buttons -->
+
+    <LinearLayout
+
+        android:id="@+id/cisc_ll_speaker_mute_end_call_buttons"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@id/cisc_iv_caller_picture"
+
+        android:orientation="horizontal"
+
+        >
+
+        <!-- Button for speaker -->
+
+        <Button
+
+            android:id="@+id/cisc_b_speaker"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/cisc_speaker"
+
+            android:layout_weight="1"
+
+            />
+
+        <!-- Button for mute -->
+
+        <Button
+
+            android:id="@+id/cisc_b_mute"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/cisc_mute"
+
+            android:layout_weight="1"
+
+            />
+
+        <!-- Button for end call -->
+
+        <Button
+
+            android:id="@+id/cisc_b_end_call"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:text="@string/cisc_end_call"
+
+            android:layout_weight="1"
+
+            />
+
+        <!-- ListView stub -->
+
+        <ListView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:id="@android:id/list"
+
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/activity_call_in_session_client.xml -->

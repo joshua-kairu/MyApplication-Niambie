@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#F3F3F3"
+
+    >
+
+    <!-- icon, name, and range status should be updated at runtime -->
+
+    <!-- contact's icon -->
+
+    <ImageView
+
+        android:id="@+id/icil_iv_individual_contact_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_blank_profile_48x48"
+        android:gravity="center"
+
+        />
+
+    <!-- contact's name and range status layout -->
+
+    <include
+
+        android:id="@+id/icil_iv_cell_individual_contact_name_and_range"
+        layout="@layout/individual_contact_name_and_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icil_iv_individual_contact_icon"
+
+        />
+
+    <!-- call button -->
+
+    <ImageButton
+
+        android:id="@+id/icil_ib_call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_call_black_36dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/call_button_custom"
+
+        />
+
+    <!-- View to hold a vertical divider -->
+
+    <View
+
+        android:id="@+id/icil_v_vertical_divider"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/icil_ib_call_button"
+        android:background="#48000000"
+
+        />
+
+</RelativeLayout>

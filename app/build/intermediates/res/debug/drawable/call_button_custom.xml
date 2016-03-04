@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<selector
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <!-- call button pressed drawable -->
+
+    <item
+
+        android:drawable="@drawable/call_button_pressed"
+
+        android:state_pressed="true"
+
+        />
+
+    <!-- call button focused drawable -->
+
+    <item
+
+        android:drawable="@drawable/call_button_focused"
+
+        android:state_focused="true"
+
+        />
+
+    <!-- call button default drawable -->
+
+    <item
+
+        android:drawable="@drawable/call_button_default"
+
+        />
+
+</selector><!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/drawable/call_button_custom.xml -->

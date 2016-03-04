@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    >
+
+    <!-- Home view -->
+
+    <!-- FrameLayout to hold either the list or the empty view -->
+
+    <FrameLayout
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        >
+
+        <!-- ListView for when there are available contacts to display -->
+
+        <ListView
+
+            android:id="@android:id/list"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent"
+
+            />
+
+        <!-- ViewStub for when there are no contacts to display -->
+
+        <ViewStub
+
+            android:id="@android:id/empty"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout="@layout/activity_make_call_listview_without_contacts"
+
+            android:layout_gravity="center"
+
+            />
+
+    </FrameLayout>
+
+
+    <!-- Button for scan -->
+    <!-- might need to change its contents to show the scanning status -->
+    <Button
+
+        android:id="@+id/mcwc_b_scan"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="@string/mcwc_scan"
+
+        />
+
+</LinearLayout>
+<!-- From: file:/media/VOLUME_C/Users/user/AndroidStudioProjects/MyApplication-Niambie/app/src/main/res/layout/activity_make_call_with_contacts.xml -->
